@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="crud">
+        <h1>CRUD Operation</h1>
+        <form>
+            <label>Name:</label>
+            <input type="text" id="name"></input>
+            <label>Age:</label>
+            <input type="number" id="age"></input>
+            <label>Email:</label>
+            <input type="email" id="mail"></input>
+            <label>Address:</label>
+            <input type="text" id="address"></input>
+            <button type="submit" id="submitbtn" class="btn">Add</button>
+            <button type="submit" id="updatebtn" class="btn" style="display: none;">Update</button>
+            <button type="submit" id="deleteallbtn">Delete all data</button>
+        </form>
+        <div class="table-data" id="tabledata">
+            <table id="tabledata1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th style="width: 250px;">Email</th>
+                        <th style="width: 250px;">Address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
